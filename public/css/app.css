@@ -1,0 +1,360 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800);* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #f1f1f1 !important;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 34px;
+}
+
+.navbar {
+  background: #1e222c;
+}
+
+.nav-brand {
+  margin: -.25em 0 0 2em;
+  float: left;
+  color: #FFFFFF;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-size: 1.15em;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.nav-brand:hover {
+  color: #34b2a7;
+}
+
+.timer-padding {
+  margin-top: 1em;
+  position: fixed;
+  top: 7%;
+  left: 90%;
+  width: 100%;
+  background: none;
+}
+
+.timer-padding img {
+  height: 32px;
+  width: 32px;
+}
+
+.timer-padding #timer {
+  font-size: 1.25em;
+  color: #1e222c;
+  line-height: 5px;
+  letter-spacing: .25em;
+  font-weight: 700;
+  opacity: 1;
+  font-family: 'Raleway', sans-serif;
+}
+
+#navbarSupportedContent ul li {
+  margin-left: 2em;
+}
+
+#navbarSupportedContent .dropdown {
+  margin-right: 1.75em;
+  position: relative;
+  display: inline-block;
+}
+
+#navbarSupportedContent .dropdown .dropdown-toggle {
+  color: #FFFFFF;
+}
+
+#navbarSupportedContent .dropdown img {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+
+#navbarSupportedContent .dropdown a {
+  text-decoration: none;
+}
+
+#navbarSupportedContent .dropdown .dropdown-content {
+  float: left;
+  display: none;
+  position: absolute;
+  background-color: #FFFFFF;
+  border-radius: .3em;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#navbarSupportedContent .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#navbarSupportedContent .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+#navbarSupportedContent .dropdown:hover .dropdown-content {
+  display: block;
+  border-radius: .3em;
+}
+
+#navbarSupportedContent .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#workspace {
+  background-color: #FFFFFF;
+  margin: 2em auto;
+  margin-top: 2.5em;
+  font-family: 'Raleway', sans-serif;
+  padding: 40px;
+  padding-bottom: 4em;
+  width: 70%;
+  min-width: 300px;
+}
+
+#workspace h2 {
+  display: inline;
+}
+
+#workspace .hotKeys {
+  padding: 3px 10px;
+  float: right;
+  background: #34b2a7;
+  border: 1px solid #34b2a7;
+  border-radius: .2em;
+  padding: 3px 8px;
+  margin-left: 1em;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+#workspace .hotKeys:hover {
+  color: #34b2a7;
+  background: #FFFFFF;
+}
+
+#workspace highlight {
+  font-weight: bold;
+  color: #34b2a7;
+  text-transform: capitalize;
+}
+
+.tab {
+  display: none;
+}
+
+.info-box {
+  font-size: 13px;
+  line-height: 23px;
+  padding: 5px 10px;
+  background: #f0faff;
+  border: 1px solid #c5dfea;
+  margin: 20px 0;
+}
+
+.info-box p {
+  margin: 0;
+  padding: 0;
+}
+
+.image-wrapper {
+  border: 1px solid #EDEDED;
+  padding: 4px;
+  background-color: #F6F8FB;
+  overflow: hidden;
+  position: relative;
+  height: 800px;
+}
+
+.image-wrapper img {
+  vertical-align: middle;
+}
+
+.bib-wrapper {
+  position: fixed;
+  width: 62.4%;
+  margin: 2em 0 2em 0;
+  top: 60%;
+  z-index: 100%;
+  background-color: #E9E9E9;
+  border: 1px solid #E9E9E9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bib-wrapper .toolBar {
+  margin: 0 0 1em 5px;
+  height: 32px;
+  width: 80%;
+  background: #666;
+}
+
+.bib-wrapper .toolBarLeft {
+  float: left;
+}
+
+.bib-wrapper .prev-section {
+  font-size: 12px;
+  position: absolute;
+  margin: 5em 0 0 -35%;
+  float: left;
+  font-weight: bold;
+  color: #34b2a7;
+}
+
+.bib-wrapper .fieldToolbar {
+  color: #f2f2f2;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 5px 0 10px;
+}
+
+.bib-wrapper .fieldToolbar .labelToolbar {
+  width: 98px;
+  padding-right: 10px;
+  border-radius: 2px;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  cursor: default;
+}
+
+.bib-wrapper .toolBarButton {
+  margin-left: 2em;
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+.bib-wrapper .bib-label {
+  margin-left: 10px;
+}
+
+.bib-wrapper .thumbnail {
+  float: right;
+  margin: 10px -9em 8px 0;
+}
+
+.bib-wrapper .thumbnail img {
+  max-width: 90px;
+}
+
+.bib-wrapper input {
+  padding: 8px;
+  width: 35%;
+  font-size: .9em;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #aaaaaa;
+  margin-bottom: 4.75em;
+}
+
+.bib-wrapper input.invalid {
+  background-color: #ffdddd;
+}
+
+.bib-wrapper .btnImageNav {
+  background: none;
+  border: none;
+  padding: 0 5px;
+  display: inline-block;
+  border-radius: 2px;
+  color: #FFFFFF;
+  margin-top: -.5em;
+  margin-left: 1em;
+  font-size: 1em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bib-wrapper .btnImageNav:hover {
+  border: 1px solid #E9E9E9;
+}
+
+.bib-wrapper .zoom-btn {
+  float: right;
+  margin: .25em 3.75em 0 0;
+}
+
+.bib-wrapper .zoom-btn .btn {
+  background: #34b2a7;
+  border: 1px solid #34b2a7;
+  border-radius: 3px;
+  padding: 3px 10px;
+  margin-left: .5em;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.bib-wrapper .zoom-btn .btn:hover {
+  color: #34b2a7;
+  background: #FFFFFF;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+  background-color: #34b2a7;
+}
+
+#in {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  z-index: 9000;
+  background-color: #69D2E7;
+  cursor: pointer;
+}
+
+#out {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  padding-right: 5px;
+  padding-left: 10px;
+  z-index: 9000;
+  background-color: #A7DBDB;
+  cursor: pointer;
+}
+
